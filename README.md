@@ -4,6 +4,7 @@ This is a model for manage app pages, it contains a AppState class that init the
 
 
 class AppState:
+
     "HOME": pages.home_page.load,
 
 
