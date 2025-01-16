@@ -25,10 +25,10 @@ class StateMachine:
         self.page.clean()
 
         self.page.add(
-            self.appStates[self.state]()
+            self.appStates[self.state](self.goto_page)
         )
 
-    def goto(self, state) :
+    def goto_page(self, state) :
         if state == "BACK":
             self.back()
         if state in self.appStates :
