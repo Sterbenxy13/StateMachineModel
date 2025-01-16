@@ -8,10 +8,10 @@ class AppState:
 
 
 class StateMachine:
-    self.appstates: instance of AppStates class.\n
-    self.page: the page by itself.\n
-    self.state: the current state in app.\n
-    self.history: list of states keys, it will be used as a stack.\n
+    self.appstates: instance of AppStates class.
+    self.page: the page by itself.
+    self.state: the current state in app.
+    self.history: list of states keys, it will be used as a stack.
 
     self.load_page(): clean the page and load the new page from the current state. It gives self.goto_page as a parameter for pages load function, so that can contains links to navigate between other pages.
 
